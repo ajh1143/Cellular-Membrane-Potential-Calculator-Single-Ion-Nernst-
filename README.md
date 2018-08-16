@@ -111,6 +111,7 @@ if __name__ == "__main__":
     Nernst.viz(membrane*1000)
 ```
 
-### Output Parameters: 25 Degrees Celsius, -1 Ionic Charge, 10 mM Inner Concentration, 100 mM Outer Concentration
+### Output Parameters: 
+#### 25 Degrees Celsius, -1 Ionic Charge, 10 mM Inner Concentration, 100 mM Outer Concentration
 <img src="https://github.com/ajh1143/CellularEquilibriumPotential/blob/master/img/ionPlot.png" class="inline"/><br>
 
