@@ -38,9 +38,9 @@ class Nernst():
     def valence(self):
         """
         :args: none
-        :return: valence shell of ionic species
+        :return: charge of ionic species
         """
-        v = int(input("Valence"))
+        v = int(input("Charge"))
         return v
 ```
 
@@ -85,18 +85,16 @@ class Nernst():
 ### Vizualize 
 ```Python3
     def viz(self, volts):
-        """
-        :param volts: Volage in mV
-        :return: none
-        """
-        plt.scatter([0,1], [0, volts])
-        plt.plot([0,1], [0, volts])
+        plt.scatter([0,1,2,3], [0, 0, volts, volts])
+        plt.plot([0,1,2,3], [0, 0, volts, volts])
         plt.ylim(-100,100)
-        plt.xlim(0,2)
-        plt.xticks(np.arange(0, 2, 1.0))
+        plt.xlim(0,3)
+        xlabs = np.arange(0, 3, 1.0)
+        bins = ['','Channel Closed', 'Channel Open','']
+        plt.xticks(xlabs, bins)
         plt.title("Membrane Potential Single Ion Species")
-        plt.xlabel("Time")
-        plt.ylabel("Voltage (mV")
+        plt.xlabel("Membrane Permeability")
+        plt.ylabel("Voltage (mV)")
         plt.show()
 ```
 
@@ -113,4 +111,6 @@ if __name__ == "__main__":
     Nernst.viz(membrane*1000)
 ```
 
+### Output Parameters: 25 Degrees Celsius, -1 Ionic Charge, 10 mM Inner Concentration, 100 mM Outer Concentration
+<img src="https://github.com/ajh1143/CellularEquilibriumPotential/blob/master/img/ionPlot.png" class="inline"/><br>
 
