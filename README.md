@@ -92,6 +92,7 @@ class Nernst():
         xlabs = np.arange(0, 3, 1.0)
         bins = ['','Channel Closed', 'Channel Open','']
         plt.xticks(xlabs, bins)
+        plt.text(2, volts+5, str(round(volts, 2)))
         plt.title("Membrane Potential Single Ion Species")
         plt.xlabel("Membrane Permeability")
         plt.ylabel("Voltage (mV)")
