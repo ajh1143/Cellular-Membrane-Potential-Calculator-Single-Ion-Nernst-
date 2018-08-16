@@ -82,6 +82,24 @@ class Nernst():
         return membranePotential
 ```
 
+### Vizualize 
+```Python3
+    def viz(self, volts):
+        """
+        :param volts: Volage in mV
+        :return: none
+        """
+        plt.scatter([0,1], [0, volts])
+        plt.plot([0,1], [0, volts])
+        plt.ylim(-100,100)
+        plt.xlim(0,2)
+        plt.xticks(np.arange(0, 2, 1.0))
+        plt.title("Membrane Potential Single Ion Species")
+        plt.xlabel("Time")
+        plt.ylabel("Voltage (mV")
+        plt.show()
+```
+
 ### Run It!
 ```Python3
 if __name__ == "__main__":
@@ -92,4 +110,8 @@ if __name__ == "__main__":
     outer = Nernst.outerConcentration()
     membrane = Nernst.equilibrium(temperature, charge, inner, outer)
     print("Result: " + str(membrane))
+    Nernst.viz(membrane*1000)
 ```
+
+
+\
