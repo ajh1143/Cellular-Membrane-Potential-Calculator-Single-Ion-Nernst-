@@ -7,6 +7,7 @@ Modeling Nernst Equation for single ions, for multiple ions see Goldman-Hodgkin-
 ### Import
 ```Python3
 import numpy as np
+import matplotlib.pyplot as plt
 ```
 
 ### Constants
