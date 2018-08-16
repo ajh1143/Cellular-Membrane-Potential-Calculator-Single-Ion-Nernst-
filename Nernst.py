@@ -58,3 +58,14 @@ class Nernst():
         Concentrations = np.log(Xo/Xi)
         membranePotential = GasIons*Concentrations
         return membranePotential
+
+
+if __name__ == "__main__":
+    Nernst = Nernst()
+    temperature = Nernst.temp()
+    charge = Nernst.valence()
+    inner = Nernst.innerConcentration()
+    outer = Nernst.outerConcentration()
+    membrane = Nernst.equilibrium(temperature, charge, inner, outer)
+    print("Result: " + str(membrane))
+
