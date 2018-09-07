@@ -83,7 +83,7 @@ class Nernst():
         return membranePotential
 ```
 
-### Vizualize 
+### Visualize 
 ```Python3
     def viz(self, volts):
         plt.scatter([0,1,2,3], [0, 0, volts, volts])
