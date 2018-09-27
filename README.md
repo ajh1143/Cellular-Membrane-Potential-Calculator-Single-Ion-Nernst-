@@ -1,7 +1,7 @@
 # Cellular Equilibrium Potential
 The Nernst Equation - Single Ion Species
 
-Electrochemical gradients drive countless physiological processes. Let's focus on one the majority of you will be familiar with, the action potential, a tenant of high school level biology. The standard cell maintains an electrochemical gradient via sodium and potassium ions dissolved in aqueous environments. The best way to remember the model, is to think of a French fry, a potassium rich potato sprinkled with sodium on the outside. This trend remains true in the standard cell. A higher concentration of sodium exists outside the cell, and a higher concentration of Potassium ions inside the cell.
+Electrochemical gradients drive countless physiological processes. Let's focus on one the majority of you will be familiar with, the action potential, a tenet of high school level biology. The standard cell maintains an electrochemical gradient via sodium and potassium ions dissolved in aqueous environments. The best way to remember the model, is to think of a French fry, a potassium rich potato sprinkled with sodium on the outside. This trend remains true in the standard cell. A higher concentration of sodium exists outside the cell, and a higher concentration of Potassium ions inside the cell.
 
 ## Example: Action Potential 
 <img src="https://github.com/ajh1143/CellularEquilibriumPotential/blob/master/img/ap.jpg" class="inline"/><br>
