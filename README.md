@@ -14,7 +14,7 @@ Today, we're going to write a program to calculate the expected membrane potenti
 ### Important Caveat
 We only use the Nernst equation for single ions, for multiple ions see the Goldman-Hodgkin-Katz equation. 
 
-## The Basic Model
+## Part I - The Basic Model
 For our first model, we'll use the Nernst in it's raw form, but asking the user to enter all non-constant variables, calculate our potential, and plot our imagined recording.
 
 ### Import Libraries
@@ -203,6 +203,7 @@ if __name__ == "__main__":
 
 Great! Let's continue refining our script, and develop a cleaner presentation for our audience. We're going to plot all recordings onto a single plot with colors and a legend to distinguish our observations. 
 
+## Part III - All-in-One
 ### Specific Ions From A Data File, One Plot
 ```Python3
 import numpy as np
