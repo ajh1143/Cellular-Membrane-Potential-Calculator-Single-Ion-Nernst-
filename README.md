@@ -229,7 +229,8 @@ class Nernst():
         Concentrations = np.log(Xo/Xi)
         membranePotential = GasIons*Concentrations
         return membranePotential
-        def viz(self, volts):
+        
+    def viz(self, volts):
         plt.scatter([0,1,2,3], [0, 0, volts, volts])
         plt.plot([0,1,2,3], [0, 0, volts, volts])
         plt.ylim(-100,100)
