@@ -14,7 +14,7 @@ Today, we're going to write a program to calculate the expected membrane potenti
 ### Important Caveat
 We only use the Nernst equation for single ions, for multiple ions see the Goldman-Hodgkin-Katz equation. 
 
-## Part I - The Basic Model
+## Part I - The Basic Model: User Input
 For our first model, we'll use the Nernst in it's raw form, but asking the user to enter all non-constant variables, calculate our potential, and plot our imagined recording.
 
 ### Import Libraries
